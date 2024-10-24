@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int sum=0;
+    while(1)
+    {
+        printf("enter the number");
+        scanf("%d",&a);
+        if(a<100){
+          sum=sum+a;
+        }
+    if(a==0){
+    break;
+        }
+    printf("sum is %d",sum);
+    }
+}
