@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main()
+{
+int i,j,a;
+ for(int a=1;a<=3;a++)
+ {
+   for(i=1;i<3;i++)
+   {
+       for(j=1;j<=3;j++)
+       {
+           printf(" cse");
+       }
+    printf("\n");
+   }
+  printf("\n\n");
+ }
+}
