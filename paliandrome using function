@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<stdbool.h>
+int arraySum(int a[], int n){
+}
+bool isPaliandrome(char s[],int i,int j){
+    if(i>=j)
+      return true;
+    if(s[i] != s[j])
+      return false;
+    return isPaliandrome(s,i++,j--);
+}
+void main()
+{
+   int size;
+   scanf("%d",&size);
+   char str[size];
+   scanf("%s", &str);
+   if(isPaliandrome(str,0, size-1))
+      printf("paliandrome");
+   else
+      printf("not a paliandrome");
+}
