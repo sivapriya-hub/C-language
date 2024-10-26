@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int arr[] = {13, 4, 2, 3, 9};
+    int found = 0; 
+    int size = sizeof(arr); 
+
+    printf("Enter the number to find: ");
+    scanf("%d", &a);
+
+    for(int i = 0; i < size; i++) { 
+        if(a == arr[i]) {  
+            printf("The value is %d\n", arr[i]);
+            found = 1;  
+            break;
+        }
+    }
+    
+    if (!found) {
+        printf("The value %d is not found in the array.\n", a);
+    }
+
+    return 0;
+}
